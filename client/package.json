@@ -1,0 +1,42 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^3.15.0",
+    "@types/pure-render-decorator": "^0.2.28",
+    "@types/react": "^16.8.13",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-dom": "^16.8.3",
+    "apollo-boost": "^0.3.1",
+    "braces": "^2.3.2",
+    "curl-request": "^1.1.1",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
+    "querystring": "^0.2.0",
+    "react": "^16.8.3",
+    "react-apollo": "^2.5.1",
+    "react-copyright": "0.0.1",
+    "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "ts-pnp": "^1.0.1",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:5000/",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

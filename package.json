@@ -1,0 +1,45 @@
+{
+  "name": "fullstackrandom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node server.js"
+  },
+  "proxy": "http://localhost:5000/",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@blueprintjs/core": "^3.15.0",
+    "@blueprintjs/docs-theme": "^3.2.0",
+    "@types/pure-render-decorator": "^0.2.28",
+    "@types/react": "^16.8.13",
+    "@types/react-addons-css-transition-group": "^15.0.5",
+    "@types/react-dom": "^16.8.3",
+    "apollo-boost": "^0.3.1",
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link-http": "^1.5.11",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "curl-request": "^1.1.1",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
+    "guidebox": "^1.1.1",
+    "netflix-unofficial-api": "^1.0.9",
+    "passport-spotify": "^1.0.1",
+    "querystring": "^0.2.0",
+    "react": "^16.8.3",
+    "react-apollo": "^2.5.1",
+    "react-dom": "^16.8.3",
+    "react-pose": "^4.0.8",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "react-social-icons": "^4.1.0"
+  }
+}

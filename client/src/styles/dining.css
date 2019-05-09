@@ -1,0 +1,191 @@
+/*MIAMI DINING PAGE STYLES*/
+
+.miami-content{
+    font-family: 'regulator-nova', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .miami-content h2{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    margin-block-end: 0!important;
+    margin-block-start: 0!important;
+  }
+  
+  .random-gen{
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  
+  .outer-panel{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 1%;
+    border: 2px solid gray;
+    border-radius: 10px;
+  }
+  
+  .inner-panel{
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    height: 100%;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .inner-left{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 36%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+    .inner-left-top{
+      content:'';
+      height:60%;
+      display:flex;
+      flex-direction: column;
+      vertical-align:middle;
+    }
+  
+    #rNum{
+      font-size: 1.6em;
+      font-weight: 500;
+    }
+  
+    h2{
+      font-size: 1.125em;
+    }
+  
+    h3{
+      font-size: 1em;
+      font-weight: 300;
+    }
+  
+    .inner-left-middle{
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      text-align: center;
+      height: 80px;
+    }
+  
+    .inner-right-bottom{
+      display: flex;
+      flex-direction: row;
+      width: 750px;
+      height: 40%;
+      border: 1px solid gray;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  
+      .inner-right-b-l{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        height: 100%;
+        width: 30%;
+        margin: 0;
+      }
+  
+      .inner-right-b-l h3{
+        margin: 0;
+        display: block;
+        width: 100%;
+      }
+  
+      .inner-right-b-r{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 70%;
+        height: 100%;
+        margin: 0;
+      }
+        .address{
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+          width: 100%;
+          margin: 0;
+          border-left: 1px solid gray;
+          border-bottom: 1px solid gray;
+        }
+  
+        .address h3{
+          margin: 0;
+          display: block;
+          width: 100%;
+        }
+  
+        .address p{
+          text-align: center;
+        }
+  
+        .more-info{
+          display: flex;
+          flex-direction: column;
+          height: 50%;
+          width: 100%;
+          margin: 0;
+          border-left: 1px solid gray;
+          border-top: 1px solid gray;
+        }
+  
+        .more-info h3{
+          margin: 0;
+          display: block;
+          width: 100%;
+        }
+  
+        .more-info p{
+          text-align: center;
+        }
+  
+        .more-info a{
+          color: #2B7EEE;
+          text-decoration: none;
+          text-align: center;
+        }
+  
+        .more-info a:hover{
+          color: #AD3D75;
+        }
+  
+  .inner-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .inner-right img{
+    display: flex;
+    width: 750px;
+    height: 375px;
+    border-radius: 10px;
+  }
+  
+  .inner-right-top{
+    display: flex;
+    width: 100%;
+  }
+  

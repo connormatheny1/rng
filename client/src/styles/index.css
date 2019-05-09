@@ -1,0 +1,724 @@
+.bp3-control:focus{outline:none!important;}
+#input:focus{outline:none!important;}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'regulator-nova', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: #F6F7F8;
+  height: 100%;
+  min-height:650px;
+}
+h1, h2, p, ul, li {
+  font-family: 'regulator-nova', sans-serif;
+}
+ul.header li {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: baseline;
+  justify-content: flex-end;
+  height: 70px;
+  margin: 0;
+}
+
+.big-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #AD3D75;
+  height: 60px
+}
+
+#logo-ul{
+  display:flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 30px;
+}
+
+#logo-ul span{
+  font-size: 22px;
+}
+
+ul.header li a {
+  color: black;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 27px 25px 0 25px;
+  display: flex;
+  align-items: baseline;
+}
+
+ul.header li a:hover{
+  color: #AD3D75;
+}
+
+a.active{
+  border-bottom: 5px solid #F6F7F8;
+  color: #AD3D75!important;
+  /* font-weight: 600!important; */
+}
+
+.card-list{
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+#trash-button{
+  width: 10%;
+  
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height:650px;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.green{
+  color: white;
+  border: green;
+}
+
+.hbo-data-after{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 610px;
+  margin-top: 10px;
+}
+
+.hbo-route-p{
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#hboLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 380px;
+  padding: 0 30px 30px 20px;
+  border: 1px solid #0f0f0f;
+  border-radius: 8px;
+}
+
+h1{
+  margin: 0;
+  text-align: center;
+}
+
+#right{
+  display: flex;
+  justify-content: flex-start;
+  width: 35%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 380px;
+  padding: 0 30px 30px 30px;
+  border: 1px solid #c3142d;
+  border-radius: 8px;
+}
+
+#diningButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  font-size: 1.8em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: white;
+  background-color: #DB1A35;
+  background-image: none;
+}
+
+.genButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  font-size: 1.8em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  background-color: #D91835;
+}
+
+#hboRight{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+img{
+  border-radius: 8px;
+}
+
+#hboButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  font-size: 1.8em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: #C6CDD2;
+  background-color: #0f0f0f;
+  border: 1px solid #C6CDD2;
+  background-image: none;
+}
+
+#hboShowButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  font-size: 1.5em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: #C6CDD2;
+  background-color: #0f0f0f;
+  border: 1px solid #C6CDD2;
+  background-image: none;
+}
+
+#amazonShowButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  font-size: 1.5em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: white;
+  background-color: #00A8E1;
+  border: 1px solid #C6CDD2;
+  background-image: none;
+}
+
+#hbo-left button span svg{
+  color: #2cb0e5;
+}
+
+#amazonLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 380px;
+  padding: 0 30px 30px 30px;
+  border: 1px solid #FF9800;
+  border-radius: 8px;
+}
+
+#amazonRight{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+}
+
+#amazonButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  font-size: 1.8em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: white;
+  background-color: #00A8E1;
+  background-image: none;
+}
+
+#huluLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 380px;
+  padding: 0 30px 30px 30px;
+  border: 1px solid #1CE783;
+  border-radius: 8px;
+}
+
+.right-side{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.left-half{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.flex-guy{
+  display: flex;
+}
+
+.flex-col{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#huluButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 65px;
+  font-size: 1.8em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: #151515;
+  background-color: #1CE783;
+  background-image: none;
+}
+
+#huluShowButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  font-size: 1.5em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: #151515;
+  background-color: #1CE783;
+  background-image: none;
+}
+
+#searchButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 45px;
+  font-size: 1.5em;
+  font-family: 'regulator-nova', sans-serif;
+  border-radius: 8px;
+  color: #151515;
+  background-color: #AD3D75;
+  background-image: none;
+}
+
+
+#my-logo-li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo-ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  padding: 5;
+  margin:0;
+  width: 20%;
+  height: 100%;
+}
+
+#logo-ul a{
+  font-size: 1.25em;
+  color: #AD3D75!important;
+  font-weight: 600!important;
+  text-decoration: none;
+}
+
+#logo-ul a.active{
+  border: none;
+}
+
+#my-logo-li div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  width: 30%;
+}
+
+#my-logo-li div a{
+  margin-right: 2px;
+}
+
+.randWords{
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  height:20px;
+  font-size: 14px!important;
+  font-weight: 400!important;
+  color:#AD3D75!important;
+}
+
+.randWords:active{
+  color:#AD3D75!important;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 275px;
+}
+
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:90%;
+  height: 50px;
+  position: relative;
+  bottom:0;
+}
+
+.episode-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  width: 608px;
+}
+
+.epInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.epInfo h6, p{
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NETFLIX PAGE STYLES*/
+#netflix-content-container{
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#netflix-content-bg{
+  background-size: cover;
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+#netflix-pic{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+/*button*/
+.generate{
+  background:#2B7EEE;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1em;
+  padding:0 1em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  margin: 30px auto;
+}
+
+.generate:hover{
+  background:#fff;
+  color:#AD3D75;
+}
+
+.generate:before, .generate:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #AD3D75;
+  transition:400ms ease all;
+}
+
+.generate:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.generate:hover:before,.generate:hover:after{
+  width:100%;
+  transition:800ms ease all;
+  box-shadow: 2px 2px 2px rgba( 15, 165, 60, 0.0 );
+}
+
+.generate:active{
+  box-shadow: 4px 4px 4px rgba( 15, 165, 60, 0.0 );
+  border: 0px 2px 0px 2px;
+}
+
+/*Color palette styles*/
+
+.color-palette{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center; 
+}
+
+.color-ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+}
+
+.color-ul li{
+  display: flex;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: rgb(red, green, blue)
+}
+
+@media only screen and (max-width: 740px){
+  .big-nav{
+    flex-direction: row wrap;
+  }
+  ul.header{
+    flex-direction: row wrap;
+    align-items: center;
+  }
+  ul.header li a{
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+  }
+#logo-ul{
+  flex-direction: row wrap;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Button styles
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+#generate {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+#generate {
+  display: inline-block;
+  position: relative;
+  padding: 20px 38px;
+  top: 30px;
+  font-size: 1.5em;
+  font-family: "Open Sans", Helvetica;
+  border-radius: 4px;
+  border-bottom: 1px solid purple;
+  background: purple;
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+  
+  -webkit-transform: translateZ(10);
+     -moz-transform: translateZ(10);
+      -ms-transform: translateZ(10);
+          transform: translateZ(10);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+#generate:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+  
+  -webkit-transform: rotateX(30deg);
+     -moz-transform: rotateX(30deg);
+      -ms-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+}
+
+#generate:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.0 );
+  background: lavender;
+}
+
+
+
+.buttonPrimary{
+  width: 50%;
+  display: block;
+
+}
+*/

@@ -1,0 +1,205 @@
+
+/*
+.seperator-wrapper {
+  width: 100%;
+}
+.seperator-wrapper .seperator {
+  width: 3000px;
+  height: 5px;
+  animation: rotate 3s infinite linear;
+  -webkit-animation: rotate 3s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+@keyframes rotate {
+  from {
+    background-position: -3000px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+.gradient {
+  background: #30ff90;
+  background: -moz-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #30ff90), color-stop(25%, #ed2ded), color-stop(50%, #c99826), color-stop(75%, #30ffe6), color-stop(100%, #30ff90));
+  background: -webkit-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  background: -o-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  background: -ms-linear-gradient(left, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#30ff90', endColorstr='#30ff90',GradientType=1 );
+}
+*/
+
+/*#picContainer{}*/
+
+/*Nav animation styles
+.svg-wrapper {
+  transform: translateY(-50%);
+	margin: 0 auto;
+  width: 100%;  
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 2px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-size: 1em;
+  color: black;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+*/
+/*RANDOM GRAPH http://bl.ocks.org/erkal/9746513
+.link {stroke: black;}
+.node {stroke: white; stroke-width: 3px;}
+*/ 
+
+
+CODE FOR GetColorPalette, api shit
+
+  
+
+
+  /*
+  constructor(props){
+    super(props);
+    this.state = {
+        rgb1: "",
+        rgb2: "",
+        rgb3: "",
+        rgb4: "",
+        rgb5: ""
+    };
+    this.generatePalette = this.generatePalette.bind(this);
+  }
+
+  componentDidMount(){
+      this.setState({rgb1: "rgb(0,0,0)",
+      rgb2: "rgb(0,0,0)",
+      rgb3: "rgb(0,0,0)",
+      rgb4: "rgb(0,0,0)",
+      rgb5: "rgb(0,0,0)"})
+  }
+
+  randNum = () => {
+      return Math.floor(Math.random()*(255-0+1));
+  }
+  
+  randRGB = () => {
+    let colors = 'rgb(';
+
+    for(let i = 0; i < 2; i++){
+        let randN = this.randNum();
+        //let numStr = randN.toString();
+        colors += randN + ',';
+    }
+    colors += this.randNum() + ')';
+    return colors;
+  }
+
+  generatePalette = () => {
+      this.setState({
+        rgb1: this.randRGB(),
+        rgb2: this.randRGB(),
+        rgb3: this.randRGB(),
+        rgb4: this.randRGB(),
+        rgb5: this.randRGB()
+      })
+  }
+
+
+
+  render() {
+    
+    let rgb1 = this.state.rgb1;
+    
+    let style1 = {
+        backgroundColor: "rgb"
+    };
+    let style2 = {backgroundColor: this.state.rgb2};
+    let style3 = {backgroundColor: this.state.rgb3};
+    let style4 = {backgroundColor: this.state.rgb4};
+    let style5 = {backgroundColor: this.state.rgb5};
+
+    
+
+    return (
+      <div className="color-palette">
+        <ul className = "color-ul">
+            <li style = {{style1}}></li>
+            <li style = {{style2}}></li>
+            <li style = {{style3}}></li>
+            <li style = {{style4}}></li>
+            <li style = {{style5}}></li>
+        </ul>
+        <button className="generate" type="submit" value="Generate Random Color Palette" onClick={ this.generatePalette }>Generate Random Color Palette</button>
+      </div>
+    );
+  }
+  
+
+ constructor(props){
+    super(props);
+    this.state = { color: [23, 165, 231]};
+    this.handleClick = this.handleClick.bind(this);
+  }
+  componentDidMount() {
+    this.applyColor();
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    this.applyColor();
+  }
+
+  formatColor(ary) {
+    return 'rgb(' + ary.join(', ') + ')';
+  }
+
+  isLight() {
+    const rgb = this.state.color;
+    return rgb.reduce((a,b) => a+b) < 127 * 3;
+  }
+
+  applyColor() {
+    const color = this.formatColor(this.state.color);
+    document.body.style.background = color;
+  }
+
+  chooseColor() {
+    const random = [];
+    for (let i = 0; i < 3; i++) {
+      random.push(Math.floor(Math.random()*256));
+    }
+    return random;
+  }
+  handleClick() {
+    this.setState({color: this.chooseColor()});
+  }
+  render() {
+    return (
+      <div className="color-palette">
+        
+      		Your color is {this.formatColor(this.state.color)}.
+              <button onClick = {this.handleClick}></button>
+      </div>
+    );
+  }
+  */
+  
+
