@@ -1,8 +1,8 @@
 import React from "react";
 import { InputGroup, Collapse, Icon, Intent, Button, H3, H4, Card, Elevation } from "@blueprintjs/core";
-import SearchWrap from '../components/SearchWrap';
-import SearchDisplay from '../components/SearchDisplay';
-import SearchInfo from '../components/SearchInfo';
+import SearchWrap from '../components/styled/SearchWrap';
+import SearchDisplay from '../components/styled/SearchDisplay';
+import SearchInfo from '../components/styled/SearchInfo';
 import { handleStringChange } from "@blueprintjs/docs-theme";
 import RandomEpisode from "../components/RandomEpisode";
 

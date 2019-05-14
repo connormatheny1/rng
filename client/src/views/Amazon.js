@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import AmazonRoute from '../api/AmazonRoute';
  
-class Amazon extends Component {
+class Amazon extends React.Component {
 
 
   render() {

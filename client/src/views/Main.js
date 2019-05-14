@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import { Route, HashRouter } from "react-router-dom";
+import MainContentWrap from "../components/styled/MainContentWrap";
 import Nav from "../components/Nav.js";
 import Netflix from "./Netflix";
 import HBO from "./HBO";
@@ -23,7 +24,7 @@ class Main extends Component {
   render() {
     return (
         <HashRouter>
-            <div style = {style}>
+            <MainContentWrap>
                 <Nav></Nav>
                 <div className="content">
                     <Route exact path="/" component={Home}/>
@@ -40,7 +41,7 @@ class Main extends Component {
                     <Route path="/search" component={Search}/>
                 </div>
                 <Footer></Footer>
-            </div>
+            </MainContentWrap>
         </HashRouter>
     );
   }
