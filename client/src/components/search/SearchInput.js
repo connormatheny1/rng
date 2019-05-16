@@ -1,36 +1,36 @@
 import React from 'react';
-import { handleStringChange } from "@blueprintjs/docs-theme";
-import { InputGroup, Intent, Button, H3} from "@blueprintjs/core";
+import { InputGroup } from "@blueprintjs/core";
 
 export default class SearchInput extends React.Component{
     constructor(props){
         super(props);
-        this.
+        this.handleChange = this.handleChange.bind(this);
     }
-    handleChange = handleStringChange(searchInput => this.setState({ searchInput }));
+
+    handleChange(e) {
+        const term = e.target.value;
+        this.props.onChange(term);
+    }    
+
     render(){
+        const inputStyle = {
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            margin: 0,
+            boxSizing: 'border-box'
+        }
         return(
             <div>
-                <H3 className="text-center">Search for a specific TV show to generate a random episode</H3>
-                    <InputGroup
-                        large={large}
-                        leftIcon="search"
-                        rightElement = {
-                            <Button 
-                                minimal={true} 
-                                icon="arrow-right" 
-                                intent={Intent.PRIMARY}
-                                loading={this.state.isFetching}
-                                onClick={this.getSearch.bind(this, this.state.searchInput)}
-                                type="submit"
-                            /> }
-                        onChange={this.handleChange}
-                        placeholder={placeholder}
-                        type = "input"
-                        style={inputStyle}
-                        id="input"
-                    >
-                    </InputGroup>   
+                <InputGroup
+                    large={true}
+                    leftIcon="search"
+                    onChange={this.handleChange}
+                    placeholder='Search'
+                    type = "input"
+                    style={inputStyle}
+                    id="input"
+                />
             </div>
         );
     }

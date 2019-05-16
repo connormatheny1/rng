@@ -12,9 +12,6 @@ export default class RandPhrase extends React.Component{
         };
       }
 
-
-
-
     generateRand = (min, max) => {
         return Math.floor(Math.random()*(max-min+1)+min)
     }
@@ -35,7 +32,6 @@ export default class RandPhrase extends React.Component{
             g: 'generator'
         });
     }
-
 
     render(){
         const r = this.state.r;

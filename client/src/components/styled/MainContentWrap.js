@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 const MainContentWrap = styled.div`
-    font-family: 'regulator-nova', sans-serif;
     display:flex;
     flex-direction: column;
     align-items: center;

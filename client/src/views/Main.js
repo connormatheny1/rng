@@ -17,9 +17,6 @@ import HboTv from "./HboTv.js";
 import Home from "./Home";
 import Footer from "../components/Footer";
 import Search from "./Search";
-
-let style = {fontFamily: "'regulator-nova', sans-serif", display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'space-between', width:'100%', height:'100%'};
-
 class Main extends Component {
   render() {
     return (

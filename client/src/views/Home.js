@@ -1,12 +1,19 @@
 import React from "react";
-import posed from "react-pose";
-
-
 export default class Home extends React.Component{
     render(){
         return(
             <div>
-                <h1 style={{fontFamily:'sans-serif', marginTop:100}}>This is the home page</h1>
+                <div className="text-center">
+                    <h1 style={{marginTop:100, marginBottom: 20}}>Welcome!</h1>
+                    <h1>This site was created to help you find something to watch</h1>
+                </div>
+                <div>
+                    <h2>Instructions if you really need them: </h2>
+                    <p>If you have no idea what you want to watch, head to the platform you'd like to watch on and then generate a random movie or show title.</p>
+                    <p>If you have a particular show already in mind, head to the search page and type in the name of the show you want to watch. Once you've found the correct title, click on the dropdown and hit the random episode button.</p>
+                    <br></br><p>**A quick note about the random episode search module, to get a truly random episode, generate twice. Because of a stupid bug that I'm working on, the first episode you 'randomly' generate will be that show's last episode to come out. So click it again and a truly random result will be displayed.</p>
+                    <p>That is all.</p>
+                </div>
             </div>
         );
     }
